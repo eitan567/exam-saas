@@ -74,6 +74,7 @@ export default function LoginPage() {
                   {...register('email')}
                   className="mt-1 input"
                   placeholder="you@example.com"
+                  autoComplete='username'
                 />
                 {touched.email && errors.email && (
                   <p className="mt-1 text-sm text-red-600">{errors.email}</p>
@@ -90,6 +91,7 @@ export default function LoginPage() {
                   {...register('password')}
                   className="mt-1 input"
                   placeholder="••••••••"
+                  autoComplete='current-password'
                 />
                 {touched.password && errors.password && (
                   <p className="mt-1 text-sm text-red-600">{errors.password}</p>
